@@ -62,6 +62,7 @@ contactButton.addEventListener('click', () => {
     const body = document.querySelector('.background-off')
 
     body.classList.add('background-on')
+    document.querySelector('body').style.overflow = "hidden"
 
     body.insertAdjacentHTML('afterbegin', `<div class="form">
        <div class="close_wrapper">
@@ -74,17 +75,17 @@ contactButton.addEventListener('click', () => {
             <span></span>
         </div>
 
-        <div id="1-input" class="first-input__form">
+        <div id="1-input" class="first-input__form input__form">
         <input placeholder="Enter your name" type="text" class="first-name input">
         </div>
-        <div id="2-input">
+        <div id="2-input" class="input__form">
         <input placeholder="Enter your surname" type="text" class="last-name input">
         </div>
-        <div id="input-3">
+        <div id="input-3" class="input__form">
         <input placeholder="Enter your email" type="text" class="email">
         <span id="error-3" class="error-span"></span>
         </div>
-        <div id="4-input">
+        <div id="4-input" class="input__form">
         <textarea placeholder="Leave a comment" class="form-input comment"></textarea>
         </div>
 
@@ -143,6 +144,7 @@ contactButton.addEventListener('click', () => {
     const close = document.querySelector('.close');
 
     close.addEventListener('click', () => {
+        document.querySelector('body').style.overflow = "visible"
         body.classList.remove('background-on')
         body.removeChild(form)
     })
@@ -188,6 +190,9 @@ contactButton.addEventListener('click', () => {
             email.style.border = "2px solid #ff3f40";
             errorEmail.style.width = "auto"
             errorEmail.innerHTML = "all fields must be filled"
+            if (window.innerWidth <= 800) {
+                errorEmail.style.marginRight = "60%"
+            }
         };
 
         errorEmailArr.forEach((el) => {
@@ -199,6 +204,9 @@ contactButton.addEventListener('click', () => {
             } else {
                 errorEmail.style.width = "72%"
                 errorEmail.innerHTML = "You can use only English letters, dot and @";
+                if (window.innerWidth <= 800) {
+                    errorEmail.style.marginRight = "26%"
+                }
                 email.style.border = "2px solid #ff3f40";
 
                 email.addEventListener('focus', () => {
