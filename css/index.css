@@ -1106,20 +1106,38 @@ footer {
 }
 
 .close_wrapper {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-.form-text {
-    margin-top: 40px;
+    justify-content: center;
 }
 
 .close {
-    bottom: 20px;
+    bottom: -20px;
+    right: -19px;
+}
+
+.form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .arrow {
-    margin-top: 30px;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.subscribe_wrapper {
+    width: 100%;
+}
+
+.input__form {
+    width: 315px;
+}
+
+.arrow > span {
+    margin-bottom: 5px;
 }
 
  }
