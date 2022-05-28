@@ -144,7 +144,7 @@ contactButton.addEventListener('click', () => {
     const close = document.querySelector('.close');
 
     close.addEventListener('click', () => {
-        document.querySelector('body').style.overflow = "scroll";
+        document.querySelector('body').style.overflowY = "scroll";
         body.classList.remove('background-on')
         body.removeChild(form)
     })
