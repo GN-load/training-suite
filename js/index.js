@@ -280,6 +280,7 @@ contactButton.addEventListener('click', () => {
                 for (let d = 0; d < 4; d++) {
                     correctInputs[d].value = '';
                 };
+                document.querySelector('body').style.overflowY = "scroll";
 
                 body.classList.remove('background-on')
                 body.removeChild(form)
