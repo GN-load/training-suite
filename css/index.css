@@ -467,6 +467,7 @@ main {
 
 .product_wrapper > div {
     margin: 20px 0 0 20px;
+    box-shadow: -5px 5px 5px 5px rgb(76 76 76 / 35%);
 }
 
 /* third section */
@@ -899,6 +900,18 @@ footer {
          width: 100%;
      }
 
+    #img-0 {
+        margin: 20px 0 0 20px;
+    }
+
+    #img-4 {
+        margin: 20px 0 0 20px;
+    }
+
+    .film_wrapper {
+        margin: 20px 0 0 20px;
+    }
+
      .header_nav {
          display: none;
      }
@@ -1051,15 +1064,15 @@ footer {
 }
 
 .product_wrapper > div {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 20px;
 }
 
 #img-0 {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 20px;
 }
 
 #img-4 {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 20px;
 }
 
 .workers_description_wrapper {
